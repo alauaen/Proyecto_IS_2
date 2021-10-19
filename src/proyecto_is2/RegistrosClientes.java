@@ -86,6 +86,11 @@ public class RegistrosClientes extends javax.swing.JFrame {
 
         botonCancelar.setBackground(new java.awt.Color(255, 0, 0));
         botonCancelar.setText("Cancelar");
+        botonCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCancelarActionPerformed(evt);
+            }
+        });
 
         LabelSalidaRegistro.setText("Fecha salida");
 
@@ -247,6 +252,13 @@ public class RegistrosClientes extends javax.swing.JFrame {
     private void jTextPrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextPrecioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextPrecioActionPerformed
+
+    private void botonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCancelarActionPerformed
+        // TODO add your handling code here:
+        LoginGerente ger = new LoginGerente();
+        ger.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_botonCancelarActionPerformed
 
     /**
      * @param args the command line arguments

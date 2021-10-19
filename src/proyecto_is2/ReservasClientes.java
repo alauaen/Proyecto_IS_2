@@ -40,7 +40,7 @@ public class ReservasClientes extends javax.swing.JFrame {
         jListParcelasCliente = new javax.swing.JList<>();
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton3 = new javax.swing.JToggleButton();
-        jButton1 = new javax.swing.JButton();
+        botonCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -93,8 +93,13 @@ public class ReservasClientes extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(255, 0, 0));
-        jButton1.setText("Cancelar");
+        botonCancelar.setBackground(new java.awt.Color(255, 0, 0));
+        botonCancelar.setText("Cancelar");
+        botonCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -127,7 +132,7 @@ public class ReservasClientes extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jButton1))
+                                .addComponent(botonCancelar))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(37, 37, 37)
                                 .addComponent(BotonConsultarParcela)
@@ -173,7 +178,7 @@ public class ReservasClientes extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addComponent(jToggleButton3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(botonCancelar)
                 .addGap(20, 20, 20))
         );
 
@@ -191,6 +196,13 @@ public class ReservasClientes extends javax.swing.JFrame {
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton3ActionPerformed
+
+    private void botonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCancelarActionPerformed
+        // TODO add your handling code here:
+        LoginCliente cli = new LoginCliente();
+        cli.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_botonCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -235,7 +247,7 @@ public class ReservasClientes extends javax.swing.JFrame {
     private javax.swing.JLabel LabelEntradaReserva;
     private javax.swing.JLabel LabelSalidaReserva;
     private javax.swing.JLabel ParcelasReserva;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton botonCancelar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JList<String> jListParcelasCliente;
     private javax.swing.JList<String> jListParcelasLibres;

@@ -107,6 +107,9 @@ public class LoginCliente extends javax.swing.JFrame {
 
     private void BotonAceptarGerenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAceptarGerenteActionPerformed
         // TODO add your handling code here:
+        ReservasClientes res = new ReservasClientes();
+        res.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BotonAceptarGerenteActionPerformed
 
     private void TextfieldDNIClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextfieldDNIClienteActionPerformed
@@ -115,6 +118,9 @@ public class LoginCliente extends javax.swing.JFrame {
 
     private void BotonInicioGerenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioGerenteActionPerformed
         // TODO add your handling code here:
+        LoginGerente ger = new LoginGerente();
+        ger.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BotonInicioGerenteActionPerformed
 
     /**

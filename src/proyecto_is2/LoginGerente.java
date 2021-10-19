@@ -120,6 +120,9 @@ public class LoginGerente extends javax.swing.JFrame {
 
     private void BotonAceptarGerenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAceptarGerenteActionPerformed
         // TODO add your handling code here:
+        RegistrosClientes cli = new RegistrosClientes();
+        cli.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BotonAceptarGerenteActionPerformed
 
     private void TextfieldUsuarioGerenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextfieldUsuarioGerenteActionPerformed
@@ -128,6 +131,9 @@ public class LoginGerente extends javax.swing.JFrame {
 
     private void BotonVolverGerenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonVolverGerenteActionPerformed
         // TODO add your handling code here:
+        LoginCliente log = new LoginCliente();
+        log.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BotonVolverGerenteActionPerformed
 
     /**
