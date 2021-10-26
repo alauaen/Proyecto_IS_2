@@ -3,27 +3,32 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto_is2;
+package Modelo;
 
+import Vista.*;
 import java.util.ArrayList;
 
 /**
  *
  * @author danie
  */
-public class Reserva {
+public class Registro {
     private String fecha_inicio;
     private String fecha_salida;
     private ArrayList<Parcela> parcelasDispo = new ArrayList();
     private ArrayList<Parcela> parcelasReservadas = new ArrayList();
     private Cliente cliente;
-    
-    public Reserva(String fecha_inicio, String fecha_salida, ArrayList<Parcela> parcelasDispo, ArrayList<Parcela> parcelasReservadas, Cliente cliente){
+    private String nombreTiendaCampanya;
+    private String tamanyoTiendaCampanya;
+    private int precio;
+
+    public Registro(String fecha_inicio, String fecha_salida, Cliente cliente, String nombreTiendaCampanya, String tamanyoTiendaCampanya, int precio) {
         this.fecha_inicio = fecha_inicio;
         this.fecha_salida = fecha_salida;
-        this.parcelasDispo = parcelasDispo;
-        this.parcelasReservadas = parcelasReservadas;
         this.cliente = cliente;
+        this.nombreTiendaCampanya = nombreTiendaCampanya;
+        this.tamanyoTiendaCampanya = tamanyoTiendaCampanya;
+        this.precio = precio;
     }
 
     public String getFecha_inicio() {
@@ -50,6 +55,14 @@ public class Reserva {
         this.parcelasDispo = parcelasDispo;
     }
 
+    public ArrayList<Parcela> getParcelasReservadas() {
+        return parcelasReservadas;
+    }
+
+    public void setParcelasReservadas(ArrayList<Parcela> parcelasReservadas) {
+        this.parcelasReservadas = parcelasReservadas;
+    }
+
     public Cliente getCliente() {
         return cliente;
     }
@@ -58,12 +71,30 @@ public class Reserva {
         this.cliente = cliente;
     }
 
-    public ArrayList<Parcela> getParcelasReservadas() {
-        return parcelasReservadas;
+    public String getNombreTiendaCampanya() {
+        return nombreTiendaCampanya;
     }
 
-    public void setParcelasReservadas(ArrayList<Parcela> parcelasReservadas) {
-        this.parcelasReservadas = parcelasReservadas;
+    public void setNombreTiendaCampanya(String nombreTiendaCampanya) {
+        this.nombreTiendaCampanya = nombreTiendaCampanya;
     }
+
+    public String getTamanyoTiendaCampanya() {
+        return tamanyoTiendaCampanya;
+    }
+
+    public void setTamanyoTiendaCampanya(String tamanyoTiendaCampanya) {
+        this.tamanyoTiendaCampanya = tamanyoTiendaCampanya;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    
     
 }

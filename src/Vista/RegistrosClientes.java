@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto_is2;
+package Vista;
 
 /**
  *
@@ -58,6 +58,11 @@ public class RegistrosClientes extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         BotonConsultarParcela.setText("Añadir Parcela");
+        BotonConsultarParcela.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonConsultarParcelaActionPerformed(evt);
+            }
+        });
 
         jListParcelasCliente.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -220,8 +225,7 @@ public class RegistrosClientes extends javax.swing.JFrame {
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(172, 172, 172)
-                                .addComponent(jLabelParcelas)
-                                .addGap(157, 157, 157)))
+                                .addComponent(jLabelParcelas)))
                         .addGap(67, 67, 67))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(37, 37, 37)
@@ -324,6 +328,10 @@ public class RegistrosClientes extends javax.swing.JFrame {
     private void botonCrearHistorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCrearHistorialActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_botonCrearHistorialActionPerformed
+
+    private void BotonConsultarParcelaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonConsultarParcelaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonConsultarParcelaActionPerformed
 
     /**
      * @param args the command line arguments

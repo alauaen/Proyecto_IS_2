@@ -110,7 +110,6 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="172" max="-2" attributes="0"/>
                               <Component id="jLabelParcelas" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
@@ -216,6 +215,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="A&#xf1;adir Parcela"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonConsultarParcelaActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
       <AuxValues>

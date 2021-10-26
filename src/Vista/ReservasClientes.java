@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto_is2;
+package Vista;
 
 /**
  *
@@ -206,7 +206,7 @@ public class ReservasClientes extends javax.swing.JFrame {
                     .addComponent(jLabelTienda1)
                     .addComponent(jTextFieldTienda1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(botonCancelar)
                     .addComponent(jToggleButton3))
                 .addGap(20, 20, 20))
